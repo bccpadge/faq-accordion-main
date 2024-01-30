@@ -13,6 +13,7 @@ This is a solution to the [FAQ accordion challenge on Frontend Mentor](https://w
   - [What I learned](#what-i-learned)
   - [Useful resources](#useful-resources)
 - [Author](#author)
+- [Acknowledgments](#acknowledgments)
 
 ## Overview
 
@@ -31,8 +32,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Frontend Mentor]()
-- Live Site URL: [Github Pages]()
+- Solution URL: [Frontend Mentor](https://www.frontendmentor.io/solutions/responsive-faq-accordion-using-html-css-and-js-znZAlxbxMF)
+- Live Site URL: [Github Pages](https://bccpadge.github.io/faq-accordion-main/)
 
 ## My process
 
@@ -87,3 +88,7 @@ btn.insertAdjacentHTML("beforeend", minusIcon);
     <img src="https://img.shields.io/badge/Snapchat-FFFC00?style=for-the-badge&logo=snapchat&logoColor=white">
   </a>
 </p>
+
+## Acknowledgments
+
+- [YouTube Tutorial](https://www.youtube.com/watch?v=AxD9slgNDJI)
