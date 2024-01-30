@@ -84,7 +84,7 @@ class Accordion {
       panel.id = `panel-${this.id}-${index}`;
       panel.setAttribute("role", "region");
       panel.setAttribute("aria-labelledby", `btn-${this.id}-${index}`);
-      panel.setAttribute("hidden", "true");
+      panel.setAttribute("hidden", "");
     });
   }
 
