@@ -117,8 +117,6 @@ abbr {
   text-transform: uppercase;
 }
 
-
-
 h1,
 h2,
 h3 {
@@ -163,7 +161,6 @@ header img {
   width: 100%;
   object-fit: cover;
 }
-
 
 .accordion {
   --_acc-radius: 0.625rem;
