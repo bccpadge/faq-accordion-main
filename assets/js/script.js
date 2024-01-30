@@ -11,7 +11,7 @@
 
     .accordion__icon{
       flex-shrink:0;
-      transition: 300ms ease-in-out;
+      pointer-events:none;
     }
     
     [aria-expanded="true"] .add{
