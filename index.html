@@ -98,25 +98,27 @@
   <footer class="attribution flex">
     <p>Coded by <button class="attribution__btn" aria-label="click here to show social media icons" data-js-button aria-expanded="false" aria-haspopup="true" aria-controls="social-list">
         Rebecca Padgett
-      </button></p>
-
-    <ul class="social__list flex" data-js-tooltip role="tooltip" aria-expanded="false" id="social__list">
-      <li>
-        <a href="https://github.com/bccpadge" class="social__list-link" target="_blank" aria-label="Github profile for Rebecca Padgett">
-          <i class="fa-brands fa-github"></i>
-        </a>
-      </li>
-      <li>
-        <a href="https://www.linkedin.com/in/rebecca-padgett23" target="_blank" class="social__list-link" aria-label="LinkedIn profile for Rebecca Padgett">
-          <i class="fa-brands fa-linkedin"></i>
-        </a>
-      </li>
-      <li>
-        <a href="https://t.snapchat.com/bNUplk4b" target="_blank" class="social__list-link" aria-label="Snapchat profile for Rebecca Padgett">
-          <i class="fa-brands fa-snapchat"></i>
-        </a>
-      </li>
-    </ul>
+      </button>
+    </p>
+    <div role="tooltip">
+      <ul class="social__list flex" data-js-tooltip aria-expanded="false" id="social-list">
+        <li>
+          <a href="https://github.com/bccpadge" class="social__list-link" target="_blank" aria-label="Github profile for Rebecca Padgett">
+            <i class="fa-brands fa-github"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/in/rebecca-padgett23" target="_blank" class="social__list-link" aria-label="LinkedIn profile for Rebecca Padgett">
+            <i class="fa-brands fa-linkedin"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://t.snapchat.com/bNUplk4b" target="_blank" class="social__list-link" aria-label="Snapchat profile for Rebecca Padgett">
+            <i class="fa-brands fa-snapchat"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
   </footer>
 </body>
 <!-- !JavaScript -->
@@ -124,7 +126,7 @@
   import createAccordion from "./assets/js/script.js";
   createAccordion("#accordion", {
     onePanel: true,
-    firstExpanded: false,
+    firstExpanded: true,
   });
 </script>
 
