@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta name="description" content="Frontend Mentor - FAQ accordion" />
+  <meta name="keywords" content="HTML, CSS, JavaScript" />
+  <meta name="author" content="Rebecca Padgett" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png" />
+  <title>Frontend Mentor | FAQ accordion</title>
+  <!-- !google font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600;700&display=swap" rel="stylesheet" />
+  <!-- !font awesome cdn -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <!-- !css -->
+  <link rel="stylesheet" href="./assets/css/style.css" />
+</head>
+
+<body>
+  <main class="accordion__wrapper">
+    <h1 class="visually-hidden">Frontend Mentor | FAQ accordion</h1>
+    <picture class="accordion__banner">
+      <source media="(max-width:37.5em )" srcset="./assets/images/background-pattern-mobile.svg" />
+      <source media="(min-width:62em )" srcset="./assets/images/background-pattern-desktop.svg" />
+      <img src="./assets/images/background-pattern-desktop.svg" width="1440" height="320" aria-hidden="true" alt="" />
+    </picture>
+    <section class="accordion">
+      <header class="flex">
+        <img src="./assets/images/icon-star.svg" width="30" height="30" aria-hidden="true" alt="" />
+        <h2 class="accordion__title">
+          <abbr title="Frequently Asked Questions">faq</abbr>s
+        </h2>
+      </header>
+      <ul class="accordion__list grid" id="accordion" role="presentation">
+        <li class="accordion__item">
+          <h3>
+            <button class="accordion__trigger flex">
+              What is Frontend Mentor, and how will it help me?
+            </button>
+          </h3>
+          <div class="accordion__panel">
+            <p class="accordion__answer">
+              Frontend Mentor offers realistic coding challenges to help
+              developers improve their frontend coding skills with projects in
+              HTML, CSS, and JavaScript. It's suitable for all levels and
+              ideal for portfolio building.
+            </p>
+          </div>
+        </li>
+        <li class="accordion__item">
+          <h3>
+            <button class="accordion__trigger flex">
+              Is Frontend Mentor free?
+            </button>
+          </h3>
+          <div class="accordion__panel">
+            <p class="accordion__answer">
+              Yes, Frontend Mentor offers both free and premium coding
+              challenges, with the free option providing access to a range of
+              projects suitable for all skill levels.
+            </p>
+          </div>
+        </li>
+        <li class="accordion__item">
+          <h3>
+            <button class="accordion__trigger flex">
+              Can I use Frontend Mentor projects in my portfolio?
+            </button>
+          </h3>
+          <div class="accordion__panel">
+            <p class="accordion__answer">
+              Yes, you can use projects completed on Frontend Mentor in your
+              portfolio. It's an excellent way to showcase your skills to
+              potential employers!
+            </p>
+          </div>
+        </li>
+        <li class="accordion__item">
+          <h3>
+            <button class="accordion__trigger flex">
+              How can I get help if I'm stuck on a challenge?
+            </button>
+          </h3>
+          <div class="accordion__panel">
+            <p class="accordion__answer">
+              The best place to get help is inside Frontend Mentor's Discord
+              community. There's a help channel where you can ask questions
+              and seek support from other community members.
+            </p>
+          </div>
+        </li>
+      </ul>
+    </section>
+  </main>
+  <footer class="attribution flex">
+    <p>Coded by <button class="attribution__btn" aria-label="click here to show social media icons" data-js-button aria-expanded="false" aria-haspopup="true" aria-controls="social-list">
+        Rebecca Padgett
+      </button></p>
+
+    <ul class="social__list flex" data-js-tooltip role="tooltip" aria-expanded="false" id="social__list">
+      <li>
+        <a href="https://github.com/bccpadge" class="social__list-link" target="_blank" aria-label="Github profile for Rebecca Padgett">
+          <i class="fa-brands fa-github"></i>
+        </a>
+      </li>
+      <li>
+        <a href="https://www.linkedin.com/in/rebecca-padgett23" target="_blank" class="social__list-link" aria-label="LinkedIn profile for Rebecca Padgett">
+          <i class="fa-brands fa-linkedin"></i>
+        </a>
+      </li>
+      <li>
+        <a href="https://t.snapchat.com/bNUplk4b" target="_blank" class="social__list-link" aria-label="Snapchat profile for Rebecca Padgett">
+          <i class="fa-brands fa-snapchat"></i>
+        </a>
+      </li>
+    </ul>
+  </footer>
+</body>
+<!-- !JavaScript -->
+<script type="module">
+  import createAccordion from "./assets/js/script.js";
+  createAccordion("#accordion", {
+    onePanel: true,
+    firstExpanded: false,
+  });
+</script>
+
+</html>
