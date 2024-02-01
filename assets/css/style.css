@@ -144,7 +144,7 @@ header img {
 }
 
 .accordion__title {
-  font-size: 2rem;
+  font-size: clamp(2rem, 5vw, 3rem);
 }
 
 .accordion__title,
@@ -267,6 +267,11 @@ header img {
 @media (min-width: 50em) {
   .accordion {
     width: 37.5rem;
+    padding-block: 2.5rem;
+  }
+
+  header {
+    margin-block-end: 2.5rem;
   }
 
   .accordion__trigger {
